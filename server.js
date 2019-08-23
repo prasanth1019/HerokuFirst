@@ -8,7 +8,7 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 // Setting Base directory
 app.use(bodyParser.json());
-console.log('**********'+__dirname);
+console.log('*******----------***'+__dirname);
 app.use(express.static(__dirname + '/dist/'));
 //CORS Middleware
 app.use(function (req, res, next) {
